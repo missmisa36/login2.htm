@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #a3a1a1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.toggle-box {
+    width: 300px;
+    height: 150px;
+    background-color: #e7e3e3;
+    border: 2px solid #ff0000;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    position: relative;
+    width: 180px;
+    height: 80px;
+    background-color: #007bff;
+    box-shadow: inset 0 6px 30px #000;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -ms-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    cursor: pointer;
+}
+
+div.circle {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* border: 40px solid #fff; */
+    box-shadow: inset 0 6px 30px #000;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: left .5s;
+    -webkit-transition: left .5s;
+    -moz-transition: left .5s;
+    -ms-transition: left .5s;
+    -o-transition: left .5s;
+}
+
+.toggle-box-1 #check:checked~.check-label-1 {
+    background-color: #ff0000;
+}
+
+.toggle-box-1 #check:checked~.check-label-1 div.circle {
+    left: 100px;
+}
+
+
+
+.toggle-box-1 #check:checked~.check-label-1 div.text span:nth-child(2) {
+    visibility: visible;
+}
+.toggle-box-1 #check:checked~.check-label-1 div.text span:nth-child(1) {
+    visibility: hidden;
+}
+
+span {
+    font-size: 45px;
+    position: absolute;
+    z-index: 99;
+    transition: visibility .1s;
+    -webkit-transition: visibility .1s;
+    -moz-transition: visibility .1s;
+    -ms-transition: visibility .1s;
+    -o-transition: visibility .1s;
+}
+
+span:nth-child(1) {
+    left: 11px;
+    top: 11px;
+}
+
+
+span:nth-child(2) {
+    left: 118px;
+    top: 9px;
+    visibility: hidden;
+}
