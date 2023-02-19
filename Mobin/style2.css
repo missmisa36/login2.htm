@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+div.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-color: #130b31;
+}
+
+div.login {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    box-shadow: 0 0 20px 10px #404263;
+    -webkit-box-shadow: 0 0 20px 10px #404263;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+div.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    width: 300px;
+    margin: 20px;
+}
+
+div.login h1 {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-right: 200px;
+    padding-left: 200px;
+    border-bottom: 1px solid #fff;
+}
+
+div.content-items {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    color: #908d8d;
+    font-size: 20px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+input {
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-bottom: 2px solid #7a7979;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+input:focus~label,
+input:valid~label {
+    text-align: center;
+    background: #130b31;
+    font-size: 16px;
+    color: #19d1d4;
+    padding: 0 10px 0 10px;
+    margin-left: 20px;
+    /* border-right: 2px solid #19d1d4;
+    border-left: 2px solid #19d1d4; */
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+/* .content-items:nth-child(2) input:focus~label,
+.content-items:nth-child(2) input:valid~label {
+    background-color: #19d1d4;
+    color: #484848;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+} */
+
+input:focus {
+    border: none;
+}
+
+button {
+    background-color: #19d1d4;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+button:hover {
+    background-color: #19d1d4;
+    color: #fff;
+
+}
+
+
+@media (max-width: 992px) {
+    div.container {
+        border: 3px solid #00d9ff;
+    }
+
+    div.login h1 {
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        padding-right: 100px;
+        padding-left: 100px;
+        border-bottom: 1px solid #fff;
+    }
+}
+
+
+@media (max-width: 560px) {
+    button {
+        background-color: #19d1d4;
+        width: calc(100% - 100px);
+        border-radius: 20px;
+        padding: 11px;
+        font-weight: 700;
+        font-size: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        cursor: pointer;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+
+    div.content {
+        margin: 7px;
+    }
+
+    div.login {
+        padding: 5px;
+    }
+}
