@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-flow: row wrap;
+}
+
+
+.toggle {
+
+    width: 300px;
+    height: 150px;
+    background-color: #e7e3e3;
+    border: 2px solid #ff0000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+label {
+    background-color: blue;
+    width: 180px;
+    height: 80px;
+    position: relative;
+    border-radius: 120px;
+    cursor: pointer;
+    box-shadow: inset 0px 6px 30px black;
+
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: azure;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    box-shadow: inset 0px 6px 30px;
+    transition: left 0.5s;
+}
+
+.toggle #tog:checked~.tog-2 {
+    background-color: #ff0000;
+
+}
+
+
+.toggle #tog:checked~.tog-2 .circle {
+    left: 100px;
+}
+
+ .toggle #tog:checked~ .tog-2 .text span:nth-child(1) {
+    visibility: hidden;
+}
+
+ .toggle #tog:checked~ .tog-2 .text span:nth-child(2) {
+    visibility: visible;
+}
+
+span {
+    font-size: 45px;
+    color: black;
+    position: absolute;
+
+}
+
+span:nth-child(1) {
+    left: 11px;
+    top: 11px;
+}
+
+span:nth-child(2) {
+    left: 139px;
+    top: 11px;
+    visibility: hidden;
+}
