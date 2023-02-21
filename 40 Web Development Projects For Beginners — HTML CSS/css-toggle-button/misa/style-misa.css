@@ -14,7 +14,6 @@
     flex-flow: row wrap;
 }
 
-
 .toggle {
 
     width: 300px;
@@ -53,19 +52,17 @@ label {
 
 .toggle #tog:checked~.tog-2 {
     background-color: #ff0000;
-
 }
-
 
 .toggle #tog:checked~.tog-2 .circle {
     left: 100px;
 }
 
- .toggle #tog:checked~ .tog-2 .text span:nth-child(1) {
+.toggle #tog:checked~.tog-2 .text span:nth-child(1) {
     visibility: hidden;
 }
 
- .toggle #tog:checked~ .tog-2 .text span:nth-child(2) {
+.toggle #tog:checked~.tog-2 .text span:nth-child(2) {
     visibility: visible;
 }
 
