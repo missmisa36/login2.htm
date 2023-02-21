@@ -5,8 +5,6 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-
 .container {
     width: 100%;
     height: 100vh;
@@ -16,6 +14,7 @@
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
+    padding: 20px;
 }
 
 .toggle-box {
@@ -58,7 +57,6 @@ div.circle {
     position: absolute;
     left: 0;
     top: 0;
-    /* border: 40px solid #fff; */
     box-shadow: inset 0 6px 30px #000;
     background-color: #fff;
     border-radius: 50%;
@@ -82,11 +80,11 @@ div.circle {
 }
 
 
-
-.toggle-box-1 #check:checked~.check-label-1 div.text span:nth-child(2) {
+#check:checked~span:nth-child(2) {
     visibility: visible;
 }
-.toggle-box-1 #check:checked~.check-label-1 div.text span:nth-child(1) {
+
+#check:checked~span:nth-child(1) {
     visibility: hidden;
 }
 
