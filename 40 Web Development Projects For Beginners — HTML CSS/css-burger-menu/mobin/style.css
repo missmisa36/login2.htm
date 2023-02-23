@@ -12,16 +12,19 @@ header {
     height: 100vh;
     background-color: #191818;
     position: relative;
+
 }
 
 .container {
     position: absolute;
-    width: 500px;
-    height: 500px;
+    left: 0;
+    top: 0;
+    height: 100vh;
     background-color: #724c4c;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+
 }
 
 .menu-toggle {
@@ -30,11 +33,11 @@ header {
     margin: 40px;
     position: relative;
     cursor: pointer;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
+    transition: transform 1.5s;
+    -webkit-transition: transform 1.5s;
+    -moz-transition: transform 1.5s;
+    -ms-transition: transform 1.5s;
+    -o-transition: transform 1.5s;
 }
 
 span {
@@ -44,6 +47,11 @@ span {
     margin-bottom: 2px;
     width: 30px;
     border: 2px solid #fff;
+    transition: transform .5s;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
 }
 
 span:nth-child(2) {
@@ -56,19 +64,60 @@ span:nth-child(3) {
 
 .navigation {
     display: none;
+    transition-property: display,
+        margin,
+        width,
+        height,
+        padding,
+        background-color,
+        position,
+    ;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in-out;
 }
 
 
 .container input[type="checkbox"]:checked~.navigation {
     display: flex;
     align-items: flex-start;
-    justify-content: FLES;
+    justify-content: flex-start;
     width: 320px;
     height: 320px;
     background-color: #fff;
+
+}
+
+.container input[type="checkbox"]:checked~.menu-toggle span:nth-child(1) {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.container input[type="checkbox"]:checked~.menu-toggle span:nth-child(2) {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    top: 0px;
+}
+
+.container input[type="checkbox"]:checked~.menu-toggle span:nth-child(3) {
+    display: none;
+}
+
+.container input[type="checkbox"]:checked~.navigation ul li {
+    margin: 10px;
+
 }
 
 .container input[type="checkbox"]:checked~.navigation ul li a {
-    color: #fff;
+    color: #000000;
     font-size: 30px;
+}
+
+.container input[type="checkbox"]:checked~.navigation ul li a:hover {
+    color: blue;
 }
