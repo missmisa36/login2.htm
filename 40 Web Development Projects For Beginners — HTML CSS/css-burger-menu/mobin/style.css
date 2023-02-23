@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: #191818;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #724c4c;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.menu-toggle {
+    width: 30px;
+    height: 30px;
+    margin: 40px;
+    position: relative;
+    cursor: pointer;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 2px;
+    width: 30px;
+    border: 2px solid #fff;
+}
+
+span:nth-child(2) {
+    top: 10px;
+}
+
+span:nth-child(3) {
+    top: 20px;
+}
+
+.navigation {
+    display: none;
+}
+
+
+.container input[type="checkbox"]:checked~.navigation {
+    display: flex;
+    align-items: flex-start;
+    justify-content: FLES;
+    width: 320px;
+    height: 320px;
+    background-color: #fff;
+}
+
+.container input[type="checkbox"]:checked~.navigation ul li a {
+    color: #fff;
+    font-size: 30px;
+}
