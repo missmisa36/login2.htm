@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    background-image: linear-gradient(105deg, #5e5c5cde 0%, #9dc5c3d0 40%, transparent 40%), url("header.jpg");
+    height: 90vh;
+    background-size: cover;
+}
+
+.navbar-link {
+
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.link {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0px 15px;
+    color: azure;
+}
+
+.home {
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: -10px;
+    transition: all 0.5s;
+}
+
+.home:hover {
+    background-color: #006e69;
+}
+
+.asa:hover {
+    border-bottom: 3px solid #006e69;
+}
+
+.text {
+
+    width: 40%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.text1 {
+    grid-row: 2/3;
+    grid-column: 2/5;
+    color: aliceblue;
+}
+
+.text2 {
+    grid-row: 3/5;
+    grid-column: 2/6;
+    color: aliceblue;
+}
+
+.btn {
+    grid-row: 5/6;
+    grid-column: 2/4;
+    font-weight: bold;
+    align-self: start;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #006e69;
+
+}
+
+.fa {
+    margin: 10px;
+}
