@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Shantell Sans', cursive;
+}
+
+.head {
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+}
+
+.image {
+    width: 70%;
+    height: 600px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    animation: left 2s ease-out;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 7%;
+}
+
+.big-text {
+    color: wheat;
+    font-size: 900%;
+    animation: Right 2s ease-out;
+}
+
+.colod-text {
+    color: brown;
+}
+
+.nav {
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navbar-link {
+    display: flex;
+    list-style: none;
+}
+
+.link {
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 0.5s;
+}
+
+.login {
+    color: brown;
+}
+
+.link:hover {
+    transform: scale(1.3);
+}
+
+.media {
+
+    color: aliceblue;
+    padding: 5px;
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    animation: Right 1s ease-in;
+}
+
+.media-text {
+    margin-left: 10px;
+}
+
+@keyframes Right {
+    0% {
+        opacity: 0;
+        transform: translatex(-150px);
+    }
+
+    90% {
+        transform: translate(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+@keyframes left {
+    0% {
+        opacity: 1;
+        transform: translatex(150px);
+    }
+
+    90% {
+        transform: translate(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
